@@ -1,0 +1,56 @@
+$body-bg: #f4f4f4;
+$primary-color: #007bff;
+$secondary-color: #0056b3;
+$text-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $body-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+img{
+    max-width: 150px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: $text-color;
+    margin-bottom: 10px;
+}
+
+.joke {
+    font-size: 18px;
+    color: $text-color;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.btn {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background: $secondary-color;
+    }
+}
